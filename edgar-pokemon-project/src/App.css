@@ -1,0 +1,141 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* Flex Elements Settings */
+body,
+#root, .card, .card-id, .card-details, .type-list {
+	display:flex;
+  text-align: center;
+}
+
+/* Justify/Align Center Settings */
+body,
+#root, .card, .card-id, .type-list {
+    justify-content: center;
+    align-items: center;
+}
+body{
+  background-color: black;
+}
+
+/* Flex-direction Column Settings */
+#root {
+  flex-direction: column;
+}
+.play-button {
+  background-color: black;
+  margin: 0;
+  margin-bottom: 10%;
+  width: 80px;
+  height: 35px;
+  border-radius: 70%;
+  color: white;
+  box-shadow: 2px 3px rgba(72, 15, 5, 0.65);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1%;
+}
+
+.audio-player{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-warning {
+  margin: 2%;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  font-size: 4rem;
+  color: aliceblue;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'PT Serif', sans-serif;
+}
+
+/* Pokemon Row Settings */
+.row {
+  display: flex;
+  /* background-color: rgb(225, 255, 0); */
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.card {
+  /* display: flex; */
+  flex-direction: column;
+  margin: 3%;
+  padding: 2.5%;
+  border-radius: .45rem;
+  width: 20vw;
+  height: 50vh;
+  background-color: rgb(215, 215, 250);
+  box-shadow: 7px 10px rgba(228, 253, 7, 0.65);
+  font-size: 10px;
+}
+
+.card-id {
+  flex-direction: column;
+  margin: 3%;
+  padding: 2.5%;
+  border-radius: .45rem;
+  background-color: rgb(222, 76, 76);
+  box-shadow: 2px 3px rgba(255, 99, 71, 0.4);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-family: 'PT Serif', sans-serif;
+}
+
+.card-sprite {
+  width: 10rem;
+  height: 11rem;
+}
+
+.card-name {
+  font-size: 20px;
+}
+
+.card-details {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.type-list {
+    flex-direction: row;
+    list-style-type: circle;
+}
+
+li {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.type-list > li::marker {
+    color: rgb(222, 76, 76);
+}
+
+.pokemon-logo{
+  background-color: rgb(222, 76, 76);
+  border-radius: 20px;
+}
